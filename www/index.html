@@ -44,10 +44,11 @@
     		}
 
 	    function onDeviceReady() {
-        	document.getElementById("clicker").addEventListener("onClicks", displayDate);
+
+        	document.getElementById("clicker").addEventListener("click", onClicks);
 
         	   function onClicks(){
-        	 document.getElementById("clicker").style.opacity=".2";
+        	   alert("In Me");
         }
         
 
