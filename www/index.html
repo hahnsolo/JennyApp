@@ -37,19 +37,22 @@
 		    padding:none;
 			}
         </style>
+          <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
-        	//
-  		  function onLoad() {
-        		document.addEventListener("deviceready", onDeviceReady, false);
-    		}
+       
+        document.addEventListener("deviceready", onDeviceReady, false);
+    		alert("get to me");
 
-	    function onDeviceReady() {
-
+	    function onDeviceReady() 
+	    {
+	    	alert("in me");
         	document.getElementById("clicker").addEventListener("click", onClicks);
 
-        	   function onClicks(){
+        	   function onClicks()
+        	   {
+        	   	
         	   alert("In Me");
-        }
+        	   }
         
 
         }
