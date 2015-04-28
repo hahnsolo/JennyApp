@@ -39,7 +39,7 @@
         </style>
           <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript">
-       
+
         document.addEventListener("deviceready", onDeviceReady, false);
     
 
@@ -50,11 +50,10 @@
 	    	var track4 = new Audio();
 	    	var track3 = new Audio();
 	    	track1.src="audio/NoNoNo1.mp3";
-	    	track1.src="audio/NoNoNo2.mp3";
-	    	track1.src="audio/NoNoNo3.mp3";
-	    	track1.src="audio/NoNoNo4.mp3";
-	    	track4.Play();
-	    	alert("all is well");
+	    	track2.src="audio/NoNoNo2.mp3";
+	    	track3.src="audio/NoNoNo3.mp3";
+	    	track4.src="audio/NoNoNo4.mp3";
+	      	alert("all is well");
 	    	
 
 
@@ -68,19 +67,19 @@
         	   	switch (counter) 
         	   	{
    					case 1:
-     				track1.Play();  
+     				track1.play();  
         			break;
 
 					case 2:
-					track2.Play();
+					track2.play();
 					 break;
 
 					case 3:
-					track3.Play();
+					track3.play();
 					break;
 
 					case 4:
-					track4.Play();
+					track4.play();
 					break;
         		}
 
