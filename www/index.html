@@ -41,17 +41,47 @@
         <script type="text/javascript">
        
         document.addEventListener("deviceready", onDeviceReady, false);
-    		alert("get to me");
+    
 
 	    function onDeviceReady() 
 	    {
-	    	alert("in me");
+	    	var track1 = new Audio();
+	    	var track2 = new Audio();
+	    	var track4 = new Audio();
+	    	var track3 = new Audio();
+	    	track1.src="audio/NoNoNo1.mp3";
+	    	track1.src="audio/NoNoNo2.mp3";
+	    	track1.src="audio/NoNoNo3.mp3";
+	    	track1.src="audio/NoNoNo4.mp3";
+	    	
+
+
         	document.getElementById("clicker").addEventListener("click", onClicks);
 
         	   function onClicks()
         	   {
-        	   	
-        	   alert("In Me");
+        	   		
+        	   	var counter = Math.floor((Math.random() * 4) + 1);
+
+        	   	switch (counter) 
+        	   	{
+   					case 1:
+     				track1.Play();  
+        			break;
+
+					case 2:
+					track2.Play();
+					 break;
+
+					case 3:
+					track3.Play();
+					break;
+
+					case 4:
+					track4.Play();
+					break;
+        		}
+
         	   }
         
 
