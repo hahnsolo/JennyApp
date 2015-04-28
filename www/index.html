@@ -47,14 +47,11 @@
 
 	    function onDeviceReady() 
 	    {
-	    	var track1 = new Audio();
-	    	var track2 = new Audio();
-	    	var track4 = new Audio();
-	    	var track3 = new Audio();
-	    	track1.src="/android_asset/www/audio/NoNoNo1.mp3";
-	    	track2.src="/android_asset/www/audio/NoNoNo2.mp3";
-	    	track3.src="/android_asset/www/audio/NoNoNo3.mp3";
-	    	track4.src="/android_asset/www/audio/NoNoNo4.mp3";
+	    	var track1 = new Media("/android_asset/www/audio/NoNoNo1.mp3");
+	    	var track2 = new Media("/android_asset/www/audio/NoNoNo2.mp3");
+	    	var track4 = new Media("/android_asset/www/audio/NoNoNo3.mp3");
+	    	var track3 = new Media("/android_asset/www/audio/NoNoNo4.mp3");
+	   
 
 
         	document.getElementById("clicker").addEventListener("click", onClicks);
